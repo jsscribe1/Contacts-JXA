@@ -1,4 +1,4 @@
- * List-Contacts-JXA
+ /** List-Contacts-JXA
  *
  * Simple script that reads the information in Apple Contacts and
  * creates a text file list on the desktop.
@@ -141,24 +141,21 @@ function openFileAccess(filename){
 }
 // write contact info for all contacts one after another to desktop file "contact-list.txt"
 function writeToFile(file){
-    try{ // all lets under here are scoped to here only!
-
+    try{ 
 		// open I/O access to a desktop file
 		let openedFile = openFileAccess(file);
 
 		// loop over JS Array of Contacts, create a string, and write it to the desktop file
-		// jsArrayOfNames.slice(0,3).forEach(function(el){
-		// for(let i = 0;i<numOfContacts;i++){
-        for(let i = 0; i<2; i++){	
+		for(let i = 0;i<numOfContacts;i++){
 			// get string for contact
-			let str = createContactString(el);
+			let str = createContactString(i);
 
 			// get the current EOF location
 			let locEOF = scriptEditorApp.getEof(openedFile);
 
 			// write to the file at the EOF		
 			scriptEditorApp.write(str, { to: openedFile, startingAt: locEOF });
-		} // end of for loop
+		} 
 
 	// close the file I/O reference after all contact strings have been writen to the file
 	scriptEditorApp.closeAccess(openedFile);
