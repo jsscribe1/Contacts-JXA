@@ -48,7 +48,6 @@ let numOfContacts = objSpecPeople.length;
 // by invoking the name property on the specifier
 let jsArrayOfNames = objSpecPeople.name();
 
-
 // sort JS array ignoring upper or lower case
 jsArrayOfNames.sort(function(a, b) {
 	try{
@@ -72,7 +71,6 @@ function createContactString(contactNumber){
 	try{
 		// check that a name exists at this index (should always be true)
 		if (jsArrayOfNames[contactNumber]){
-			
 			// get an object specifier for a person with a name value at this index
 			let objSpecPerson = objSpecPeople.byName(jsArrayOfNames[contactNumber]);
 			
@@ -139,6 +137,7 @@ function openFileAccess(filename){
 		}
 	}
 }
+
 // write contact info for all contacts one after another to desktop file "contact-list.txt"
 function writeToFile(file){
     try{ 
@@ -159,7 +158,6 @@ function writeToFile(file){
 
 	// close the file I/O reference after all contact strings have been writen to the file
 	scriptEditorApp.closeAccess(openedFile);
-
 	}catch(err){
 		try {
 			// try to close the file
