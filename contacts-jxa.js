@@ -9,7 +9,7 @@
  * 1) contact name first, and if available, last
  * 2) contact organization
  * 3) phone numbers
- * 4) email addresss
+ * 4) email address
  * 5) physical address
  * 6) notes
  *
@@ -19,7 +19,7 @@
  * running any script. Please understand the code before running the script.
  *
  * @author jsscribe.com
- * @licnese MIT
+ * @license MIT
  */
 
 "use strict";
@@ -35,7 +35,7 @@ scriptEditorApp.includeStandardAdditions = true;
 let desktopLocation = scriptEditorApp.pathTo("desktop").toString();
 let desktopFile = `${desktopLocation}/contact-list.txt`;
 
-// create a regex variable for use later in removing unnecesary characters "_$!<" and ">!$_" from a string later
+// create a regex variable for use later in removing unnecessary characters "_$!<" and ">!$_" from a string later
 let regexp = /_\$!<|>!\$_/g;
 
 // get object specifier for ALL the people in contacts
@@ -133,7 +133,7 @@ function openFileAccess(filename){
 		"Click OK to exit the Script Editor and try it again."
 		 );
 		if(ans.buttonReturned === "OK"){
-		// quit the Script Editor (which should close all open file refferences)
+		// quit the Script Editor (which should close all open file references)
 		scriptEditorApp.quit(); 
 		}
 	}
@@ -157,7 +157,7 @@ function writeToFile(file){
 			scriptEditorApp.write(str, { to: openedFile, startingAt: locEOF });
 		} 
 
-	// close the file I/O reference after all contact strings have been writen to the file
+	// close the file I/O reference after all contact strings have been written to the file
 	scriptEditorApp.closeAccess(openedFile);
 	}catch(err){
 		try {
