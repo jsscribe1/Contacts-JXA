@@ -1,8 +1,9 @@
- /** List-Contacts-JXA
+ /** 
+ * contacts-jxa.js
  *
  * Simple script that reads the information in Apple Contacts and
  * creates a text file list on the desktop.
- * The contacts are sorted aphabetically by name and
+ * The contacts are sorted alphabetically by name and
  * the following info for each contact is included, if available:
  *
  * 1) contact name first, and if available, last
@@ -126,7 +127,7 @@ function openFileAccess(filename){
 	    return openedFileRef;
 	}catch(err){
 		let ans = scriptEditorApp.displayDialog(
-		"There is an error in trying to create the file on the desktop.\n" +
+		"There was an error in trying to create the file on the desktop.\n" +
 		"Make sure that you gave the script permission to run earlier.\n" + 
 		"You may have to start over and copy/paste to a new script.\n" +
 		"Click OK to exit the Script Editor and try it again."
