@@ -1,10 +1,10 @@
 # Contacts-JXA
-This is a simple automation script that runs in the MacOS script editor.  It will read your Apple contacts and create a text file on the desktop that lists these contacts in alphabetical order based on a contact's first name.
+This is a simple automation script that runs in the MacOS script editor. It will read your Apple contacts and create a text file on the desktop that lists these contacts in alphabetical order based on a contact's first name.
 
 # Setting Up
-The MacOS Script Editor is used here to run this script.  The Script Editor app is located in the /Applications/Utilities folder and comes built-in on MacOS. To get this code to run on your mac, you will first need to open the Script Editor app on your mac and then copy this code into a new blank script window that you create. Unfortunately, the Script Editor can't open plain javascript or text files. So you can't just download the contacts-jxa.js file here and try to open it in the editor directly. You will have to create a new script file in the editor and paste the code here into that editor window.  Annoying, but it's the easiest way to do this.
+The MacOS Script Editor is used here to run this script. The Script Editor app is located in the /Applications/Utilities folder and comes built-in on MacOS. To get this code to run on your mac, you will first need to open the Script Editor app on your mac and then copy this code into a new blank script window that you create. Unfortunately, the Script Editor can't open plain javascript or text files. So you can't just download the contacts-jxa.js file here and try to open it in the editor directly. You will have to create a new script file in the editor and paste the code here into that editor window.  Annoying, but it's the easiest way to do this.
 
-For this situation, open the Script Editor first and select File>New to create a new script.  Copy the raw text from the contacts-jxa.js file and paste it into that script editor window manually. Now you can save and run this code in your script editor. Make sure that you select "JavaScript" and not "AppleScript" for the script type, as shown below (AppleScript is the default).
+For this situation, open the Script Editor first and select File>New to create a new script. Copy the raw text from the contacts-jxa.js file and paste it into that script editor window manually. Now you can save and run this code in your script editor. Make sure that you select "JavaScript" and not "AppleScript" for the script type, as shown below (AppleScript is the default).
 
 ![image](https://github.com/jsscribe1/Contacts-JXA/assets/81885417/c7a36edb-2c7d-4500-a977-3261240c1658)
 
