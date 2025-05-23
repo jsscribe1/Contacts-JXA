@@ -1,5 +1,5 @@
 # Contacts-JXA
-This is a simple automation script that runs in the MacOS script editor. It will read your Apple contacts and create a text file on the desktop that lists these contacts in alphabetical order based on a contact's first name.
+This is a simple automation script that runs in the MacOS script editor (does not use Nodejs). It will read your Apple contacts and create a text file on the desktop that lists these contacts in alphabetical order based on a contact's first name.
 
 # Setting Up
 The MacOS Script Editor is used here to run this script. The Script Editor app is located in the /Applications/Utilities folder and comes built-in on MacOS. To get this code to run on your mac, you will first need to open the Script Editor app on your mac and then copy this code into a new blank script window that you create. Unfortunately, the Script Editor can't open plain javascript or text files. So you can't just download the contacts-jxa.js file here and try to open it in the editor directly. You will have to create a new script file in the editor and paste the code here into that editor window.  Annoying, but it's the easiest way to do this.
